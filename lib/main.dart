@@ -47,6 +47,43 @@ class MyHomePage extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: TextButton(
+                  onPressed: () async {
+                    final Uri params = Uri(
+                      scheme: 'mailto',
+                      path: 'codeframe15@gmail.com',
+                      query:
+                          'subject=CodeFrame User Mail&body=Hello Please Mention Your Name And Details About Your Project. If You Would Like To contacted Through Phone Call Or Whatsapp Please Mention Your Number.',
+                    );
+
+                    var url = params.toString();
+                    // ignore: deprecated_member_use
+                    if (await canLaunch(url)) {
+                      // ignore: deprecated_member_use
+                      await launch(url);
+                    } else {
+                      throw 'Could not launch $url';
+                    }
+                  },
+                  child: const Text(
+                    'Email',
+                    style: TextStyle(fontSize: 25),
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              height: 30,
+            ),
+            Container(
+              decoration: BoxDecoration(boxShadow: const [
+                BoxShadow(
+                  color: Colors.green,
+                  blurRadius: 1.0,
+                ),
+              ], borderRadius: BorderRadius.circular(10), color: Colors.white),
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: TextButton(
                   // ignore: deprecated_member_use
                   onPressed: () async => await launch(
                       "https://wa.me/+919689814874?text=Hey Its Me"),
@@ -71,8 +108,8 @@ class MyHomePage extends StatelessWidget {
                 padding: const EdgeInsets.all(10.0),
                 child: TextButton(
                   // ignore: deprecated_member_use
-                  onPressed: () async => await launch(
-                      "https://wa.me/+919689814874?text=Hey"),
+                  onPressed: () async =>
+                      await launch("https://wa.me/+919689814874?text=Hey"),
                   child: const Text(
                     'WhatsApp',
                     style: TextStyle(fontSize: 25),
