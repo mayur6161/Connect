@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "itsmayur",
+    "site": "whatsappmayur",
     "public": "build/web",
     "ignore": [
       "firebase.json",

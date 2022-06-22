@@ -50,9 +50,9 @@ class MyHomePage extends StatelessWidget {
                   onPressed: () async {
                     final Uri params = Uri(
                       scheme: 'mailto',
-                      path: 'codeframe15@gmail.com',
+                      path: 'mayurgawade2612@gmail.com',
                       query:
-                          'subject=CodeFrame User Mail&body=Hello Please Mention Your Name And Details About Your Project. If You Would Like To contacted Through Phone Call Or Whatsapp Please Mention Your Number.',
+                          'subject=Mayur &body=Hello.',
                     );
 
                     var url = params.toString();
