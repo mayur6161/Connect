@@ -86,7 +86,7 @@ class MyHomePage extends StatelessWidget {
                 child: TextButton(
                   // ignore: deprecated_member_use
                   onPressed: () async => await launch(
-                      "https://wa.me/+919689814874?text=Hey Its Me"),
+                      "https://wa.me/+918605824874?text=Hey Its Me"),
                   child: const Text(
                     'Text Me',
                     style: TextStyle(fontSize: 25),
@@ -109,7 +109,7 @@ class MyHomePage extends StatelessWidget {
                 child: TextButton(
                   // ignore: deprecated_member_use
                   onPressed: () async =>
-                      await launch("https://wa.me/+919689814874?text=Hey"),
+                      await launch("https://wa.me/+918605824874?text=Hey"),
                   child: const Text(
                     'WhatsApp',
                     style: TextStyle(fontSize: 25),
